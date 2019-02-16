@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.feilu.game.box.example.tkmapper.mapper.TestMapper">
+
+    <resultMap id="BaseResultMap" type="com.feilu.game.box.example.tkmapper.entity.Test">
+            <id column="id" property="id" jdbcType="INTEGER"></id>
+    </resultMap>
+
+    <sql id="BaseColumn">
+            id
+    </sql>
+
+    <sql id="BasicFieldColumn">
+            id
+    </sql>
+
+    <select id="selectTest" resultMap="BaseResultMap">
+        select * from t_test where id=#{id};
+    </select>
+
+</mapper>
