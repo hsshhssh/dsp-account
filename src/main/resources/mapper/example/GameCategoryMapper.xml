@@ -2,22 +2,21 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.feilu.game.box.example.tkmapper.mapper.TestMapper">
+<mapper namespace="com.feilu.game.box.example.tkmapper.mapper.GameCategoryMapper">
 
-    <resultMap id="BaseResultMap" type="com.feilu.game.box.example.tkmapper.entity.Test">
+    <resultMap id="BaseResultMap" type="com.feilu.game.box.example.tkmapper.entity.GameCategory">
             <id column="id" property="id" jdbcType="INTEGER"></id>
+            <result column="name" property="name" jdbcType="VARCHAR"/>
     </resultMap>
 
     <sql id="BaseColumn">
-            id
+            id,
+            name
     </sql>
 
     <sql id="BasicFieldColumn">
-            id
+            id,
+            name
     </sql>
-
-    <select id="selectTest" resultMap="BaseResultMap">
-        select * from t_test where id=#{id};
-    </select>
 
 </mapper>

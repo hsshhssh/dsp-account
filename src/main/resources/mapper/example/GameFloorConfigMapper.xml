@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.feilu.game.box.example.tkmapper.mapper.GameFloorConfigMapper">
+
+    <resultMap id="BaseResultMap" type="com.feilu.game.box.example.tkmapper.entity.GameFloorConfig">
+            <id column="id" property="id" jdbcType="INTEGER"></id>
+            <result column="floor_id" property="floorId" jdbcType="INTEGER"/>
+            <result column="game_id" property="gameId" jdbcType="INTEGER"/>
+            <result column="type" property="type" jdbcType="TINYINT"/>
+            <result column="weight" property="weight" jdbcType="INTEGER"/>
+            <result column="createTime" property="createtime" jdbcType="TIMESTAMP"/>
+            <result column="updateTime" property="updatetime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="BaseColumn">
+            id,
+            floor_id,
+            game_id,
+            type,
+            weight,
+            createTime,
+            updateTime
+    </sql>
+
+    <sql id="BasicFieldColumn">
+            id,
+            floorId,
+            gameId,
+            type,
+            weight,
+            createtime,
+            updatetime
+    </sql>
+
+</mapper>

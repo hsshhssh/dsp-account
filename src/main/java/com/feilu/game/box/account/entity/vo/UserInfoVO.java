@@ -17,6 +17,10 @@ public class UserInfoVO
      */
     private String avatar;
 
+    /**
+     * 用户登陆名
+     */
+    private String userName;
 
     /**
      * 用户简介
@@ -31,7 +35,7 @@ public class UserInfoVO
     /**
      * 用户角色
      */
-    private List<String> role;
+    private List<String> roles;
 
     /**
      * 用户登录凭证

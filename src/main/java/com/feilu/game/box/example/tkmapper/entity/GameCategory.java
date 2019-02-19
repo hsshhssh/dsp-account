@@ -9,13 +9,21 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Table(name = "`t_test`")
+@Table(name = "`t_game_category`")
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Test {
+public class GameCategory {
+    /**
+     * 主键id
+     */
     @Id
     @GeneratedValue(generator = "JDBC")
     private Integer id;
+
+    /**
+     * 名称
+     */
+    private String name;
 }

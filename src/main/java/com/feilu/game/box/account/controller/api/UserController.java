@@ -67,7 +67,7 @@ public class UserController implements IUserController
     }
 
     @Override
-    public ResponseBean<UserInfoVO> login(@RequestParam(value = "userName") String userName,
+    public ResponseBean<UserInfoVO> login(@RequestParam(value = "username") String userName,
                             @RequestParam(value = "password") String password,
                             HttpServletResponse resp)
     {
@@ -136,6 +136,11 @@ public class UserController implements IUserController
         xqhUserMapper.updateByPrimaryKeySelective(record);
 
         return new ResponseBean<>(1);
+    }
+
+    @Override
+    public ResponseBean logout() {
+        return new  ResponseBean(ResponseEnum.SUCCESS);
     }
 
 

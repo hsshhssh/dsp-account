@@ -38,6 +38,7 @@ public class UserService
         userInfoVO.setAvatar("https://wdl.wallstreetcn.com/48a3e1e0-ea2c-4a4e-9928-247645e3428b");
         userInfoVO.setIntroduction(xqhUser.getName());
         userInfoVO.setName(xqhUser.getName());
+        userInfoVO.setUserName(xqhUser.getUsername());
 
         // 获取角色
         Search search = new Search();
@@ -52,7 +53,7 @@ public class UserService
             roleList.add(xqhUserRole.getRoleName());
         }
 
-        userInfoVO.setRole(roleList);
+        userInfoVO.setRoles(roleList);
 
 
         userInfoVO.setToken(xqhUser.getUsername());

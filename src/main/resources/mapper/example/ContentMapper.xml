@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.feilu.game.box.example.tkmapper.mapper.ContentMapper">
+
+    <resultMap id="BaseResultMap" type="com.feilu.game.box.example.tkmapper.entity.Content">
+            <id column="id" property="id" jdbcType="INTEGER"></id>
+            <result column="picture" property="picture" jdbcType="VARCHAR"/>
+            <result column="createTime" property="createtime" jdbcType="TIMESTAMP"/>
+            <result column="updateTime" property="updatetime" jdbcType="TIMESTAMP"/>
+            <result column="content" property="content" jdbcType="LONGVARCHAR"/>
+    </resultMap>
+
+    <sql id="BaseColumn">
+            id,
+            picture,
+            createTime,
+            updateTime,
+            content
+    </sql>
+
+    <sql id="BasicFieldColumn">
+            id,
+            picture,
+            createtime,
+            updatetime,
+            content
+    </sql>
+
+</mapper>

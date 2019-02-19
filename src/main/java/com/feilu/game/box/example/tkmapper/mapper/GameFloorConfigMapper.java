@@ -1,6 +1,6 @@
 package com.feilu.game.box.example.tkmapper.mapper;
 
-import com.feilu.game.box.example.tkmapper.entity.Test;
+import com.feilu.game.box.example.tkmapper.entity.GameFloorConfig;
 import tk.mybatis.mapper.common.Mapper;
 
 /**
@@ -8,9 +8,7 @@ import tk.mybatis.mapper.common.Mapper;
 *
 * @author mapper-generator
 */
-public interface TestMapper extends Mapper<Test> {
-
-    public Test selectTest(Integer id);
+public interface GameFloorConfigMapper extends Mapper<GameFloorConfig> {
 
 }
 

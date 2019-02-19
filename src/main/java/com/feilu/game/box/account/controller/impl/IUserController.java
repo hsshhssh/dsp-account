@@ -50,5 +50,7 @@ public interface IUserController
                                        @RequestParam(value = "password") String password,
                                        HttpServletResponse resp);
 
+    @PostMapping("/logout")
+    public ResponseBean logout();
 
 }
