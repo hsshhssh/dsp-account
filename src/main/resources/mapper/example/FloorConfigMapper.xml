@@ -5,12 +5,13 @@
 <mapper namespace="com.feilu.game.box.example.tkmapper.mapper.FloorConfigMapper">
 
     <resultMap id="BaseResultMap" type="com.feilu.game.box.example.tkmapper.entity.FloorConfig">
-            <id column="id" property="id" jdbcType="INTEGER"></id>
-            <result column="title" property="title" jdbcType="VARCHAR"/>
-            <result column="type" property="type" jdbcType="TINYINT"/>
-            <result column="weight" property="weight" jdbcType="INTEGER"/>
-            <result column="createTime" property="createtime" jdbcType="TIMESTAMP"/>
-            <result column="updateTime" property="updatetime" jdbcType="TIMESTAMP"/>
+        <id column="id" property="id" jdbcType="INTEGER"></id>
+        <result column="title" property="title" jdbcType="VARCHAR"/>
+        <result column="type" property="type" jdbcType="TINYINT"/>
+        <result column="weight" property="weight" jdbcType="INTEGER"/>
+        <result column="state" property="state" jdbcType="TINYINT"/>
+        <result column="createTime" property="createtime" jdbcType="TIMESTAMP"/>
+        <result column="updateTime" property="updatetime" jdbcType="TIMESTAMP"/>
     </resultMap>
 
     <sql id="BaseColumn">
@@ -18,6 +19,7 @@
             title,
             type,
             weight,
+            state,
             createTime,
             updateTime
     </sql>
@@ -27,6 +29,7 @@
             title,
             type,
             weight,
+            state,
             createtime,
             updatetime
     </sql>

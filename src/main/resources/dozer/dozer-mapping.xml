@@ -2,4 +2,25 @@
 <mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://dozer.sourceforge.net
           http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+    <mapping>
+        <class-a>com.feilu.game.box.example.tkmapper.entity.FloorConfig</class-a>
+        <class-b>com.feilu.game.box.example.entity.vo.FloorConfigVO</class-b>
+        <field>
+            <a>state</a>
+            <b>state</b>
+        </field>
+        <field custom-converter="com.feilu.game.box.example.utils.converter.EnumConverter.FloorStatusConverter">
+            <a>state</a>
+            <b>stateStr</b>
+        </field>
+        <field>
+            <a>type</a>
+            <b>type</b>
+        </field>
+        <field custom-converter="com.feilu.game.box.example.utils.converter.EnumConverter.FloorTypeConverter">
+            <a>type</a>
+            <b>typeStr</b>
+        </field>
+    </mapping>
 </mappings>

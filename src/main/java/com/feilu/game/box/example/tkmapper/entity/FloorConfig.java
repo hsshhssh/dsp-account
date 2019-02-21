@@ -1,15 +1,11 @@
 package com.feilu.game.box.example.tkmapper.entity;
 
+import java.util.Date;
+import javax.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import java.util.Date;
 
 @Table(name = "`t_floor_config`")
 @Data
@@ -38,6 +34,11 @@ public class FloorConfig {
      * 权重
      */
     private Integer weight;
+
+    /**
+     * 状态 1启用 2禁用
+     */
+    private Integer state;
 
     /**
      * 创建时间

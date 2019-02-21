@@ -1,8 +1,8 @@
-package com.feilu.game.box.account.controller.api;
+package com.feilu.game.box.account.controller.impl;
 
 
+import com.feilu.game.box.account.controller.api.IUserController;
 import com.github.pagehelper.Page;
-import com.feilu.game.box.account.controller.impl.IUserController;
 import com.feilu.game.box.account.entity.dto.XqhUserCreateDTO;
 import com.feilu.game.box.account.entity.dto.XqhUserUpdateDTO;
 import com.feilu.game.box.account.entity.vo.UserInfoVO;

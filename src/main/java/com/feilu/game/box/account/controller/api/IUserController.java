@@ -1,4 +1,4 @@
-package com.feilu.game.box.account.controller.impl;
+package com.feilu.game.box.account.controller.api;
 
 
 import com.feilu.game.box.account.entity.dto.XqhUserCreateDTO;
