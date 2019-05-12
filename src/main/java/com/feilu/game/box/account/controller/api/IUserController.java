@@ -5,9 +5,9 @@ import com.feilu.game.box.account.entity.dto.XqhUserCreateDTO;
 import com.feilu.game.box.account.entity.dto.XqhUserUpdateDTO;
 import com.feilu.game.box.account.entity.vo.UserInfoVO;
 import com.feilu.game.box.account.entity.vo.XqhUserVO;
-import com.feilu.game.box.example.utils.common.PageResult;
-import com.feilu.game.box.example.utils.common.ResponseBean;
-import com.feilu.game.box.example.utils.common.Search;
+import com.feilu.game.box.account.utils.common.PageResult;
+import com.feilu.game.box.account.utils.common.ResponseBean;
+import com.feilu.game.box.account.utils.common.Search;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;

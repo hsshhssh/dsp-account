@@ -1,13 +1,13 @@
 package com.feilu.game.box.account.service;
 
+import com.feilu.game.box.account.utils.common.ExampleBuilder;
+import com.feilu.game.box.account.utils.common.Search;
 import com.google.common.collect.Lists;
 import com.feilu.game.box.account.entity.vo.UserInfoVO;
 import com.feilu.game.box.account.tkmapper.entity.XqhUser;
 import com.feilu.game.box.account.tkmapper.entity.XqhUserRole;
 import com.feilu.game.box.account.tkmapper.mapper.XqhUserMapper;
 import com.feilu.game.box.account.tkmapper.mapper.XqhUserRoleMapper;
-import com.feilu.game.box.example.utils.common.ExampleBuilder;
-import com.feilu.game.box.example.utils.common.Search;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;

@@ -2,6 +2,8 @@ package com.feilu.game.box.account.controller.impl;
 
 
 import com.feilu.game.box.account.controller.api.IUserController;
+import com.feilu.game.box.account.utils.common.*;
+import com.feilu.game.box.account.utils.enums.ResponseEnum;
 import com.github.pagehelper.Page;
 import com.feilu.game.box.account.entity.dto.XqhUserCreateDTO;
 import com.feilu.game.box.account.entity.dto.XqhUserUpdateDTO;
@@ -10,8 +12,6 @@ import com.feilu.game.box.account.entity.vo.XqhUserVO;
 import com.feilu.game.box.account.service.UserService;
 import com.feilu.game.box.account.tkmapper.entity.XqhUser;
 import com.feilu.game.box.account.tkmapper.mapper.XqhUserMapper;
-import com.feilu.game.box.example.enums.ResponseEnum;
-import com.feilu.game.box.example.utils.common.*;
 import org.apache.ibatis.session.RowBounds;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -55,8 +55,8 @@ public class UserController implements IUserController
 
     @Override
     public ResponseBean<PageResult<XqhUserVO>> queryList(@RequestParam("search") @NotNull Search search,
-                                           @RequestParam(value = "page", defaultValue = "1") Integer page,
-                                           @RequestParam(value = "size", defaultValue = "10") @Max(1000) Integer size)
+                                                         @RequestParam(value = "page", defaultValue = "1") Integer page,
+                                                         @RequestParam(value = "size", defaultValue = "10") @Max(1000) Integer size)
     {
         Example example = new ExampleBuilder(XqhUser.class).search(search).sort(Arrays.asList("id_desc")).build();
 
