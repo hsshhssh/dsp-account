@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.xqh.account</groupId>
-	<artifactId>account-server</artifactId>
+	<artifactId>dsp-account</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>game-box-server</name>
+	<name>dsp-account</name>
 	<description> Feilu Game Box project</description>
 
 	<parent>
