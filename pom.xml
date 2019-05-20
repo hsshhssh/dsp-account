@@ -26,7 +26,7 @@
 		<!--hssh-common-->
 		<zkdb.version>0.0.3-SNAPSHOT</zkdb.version>
 		<print.sql.version>0.0.1</print.sql.version>
-		<zkconf.version>0.0.4-SNAPSHOT</zkconf.version>
+		<zkconf.version>0.0.5-SNAPSHOT</zkconf.version>
 
 
 		<!--common-->
