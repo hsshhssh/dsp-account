@@ -26,3 +26,6 @@ nbdist/
 *.log*
 *.sh*
 **/.DS_Stores/*
+
+package.sh
+startup.sh
