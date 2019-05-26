@@ -35,7 +35,7 @@ public class UserService
     public UserInfoVO genUserInfoVOByPayUser(XqhUser xqhUser)
     {
         UserInfoVO userInfoVO = new UserInfoVO();
-        userInfoVO.setAvatar("https://wdl.wallstreetcn.com/48a3e1e0-ea2c-4a4e-9928-247645e3428b");
+        userInfoVO.setAvatar("https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif");
         userInfoVO.setIntroduction(xqhUser.getName());
         userInfoVO.setName(xqhUser.getName());
         userInfoVO.setUserName(xqhUser.getUsername());
