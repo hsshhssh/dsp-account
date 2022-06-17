@@ -33,7 +33,7 @@
 		<tk.mapper.version>1.0.0</tk.mapper.version>
 		<pagehelper.version>1.0.0</pagehelper.version>
 		<guava.version>19.0</guava.version>
-		<fastjson.version>1.2.32</fastjson.version>
+		<fastjson.version>1.2.83</fastjson.version>
 		<dozer.version>5.4.0</dozer.version>
 		<common.configuration.version>1.10</common.configuration.version>
 
